@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 375px;
+  font-family: Manrope, sans-serif;
+  background-color: hsl(210, 46%, 95%);
+}
+
+.wrapper {
+  width: 330px;
+  height: 510px;
+  margin: 75px auto 0 auto;
+  background: white;
+  border-radius: 0.6rem;
+  position: relative;
+}
+
+.img-box {
+  width: 330px;
+  height: 200px;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 30%;
+  display: block;
+  border-top-left-radius: 0.6rem;
+  border-top-right-radius: 0.6rem;
+}
+
+.main-box {
+  width: 265px;
+  margin: 35px auto;
+  line-height: 1.5;
+}
+.main-box h2 {
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+  color: hsl(217, 19%, 35%);
+}
+
+.main-box p {
+  font-size: 0.84rem;
+  color: hsla(214, 17%, 51%, 0.9);
+}
+
+.profile-box {
+  display: flex;
+  margin: auto;
+  gap: 15px;
+  margin-left: 30px;
+}
+
+.profile-box img {
+  max-width: 40px;
+  border-radius: 50%;
+}
+
+.profile {
+  line-height: 1.6;
+  justify-content: space-between;
+}
+
+.profile h4 {
+  color: hsl(217, 19%, 35%);
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-right: 60px;
+}
+
+.profile p {
+  font-size: 0.75rem;
+  color: hsla(214, 17%, 51%, 0.9);
+}
+
+.share-icon img {
+  padding: 10px;
+  background: hsl(210, 46%, 95%);
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  margin-top: 4px;
+}
+
+.share-box {
+  width: 330px;
+  height: 65px;
+  display: none;
+  position: absolute;
+  background: hsl(217, 19%, 35%);
+  gap: 10px;
+  align-items: center;
+  border-bottom-left-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+  bottom: 0px;
+}
+
+.display {
+  display: flex;
+}
+
+.share-box p {
+  text-transform: uppercase;
+  margin-left: 30px;
+  font-size: 0.8rem;
+  letter-spacing: 0.3rem;
+  color: hsl(214, 17%, 51%);
+}
+
+.share-box li {
+  display: inline-flex;
+  list-style: none;
+  margin: 20px 8px;
+}
+
+.share-icon-mobile {
+  margin-left: 40px;
+  margin-top: 5px;
+}
+
+#share-icon-mobile {
+  width: 32px;
+  height: 32px;
+  background-color: hsl(214, 17%, 51%);
+  padding: 9px;
+  border-radius: 50%;
+  fill: white;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    width: 1440px;
+    height: 800px;
+  }
+  .wrapper {
+    width: 730px;
+    height: 280px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 200px auto 0 auto;
+  }
+  .img-box {
+    width: 285px;
+    height: 280px;
+  }
+
+  .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0;
+    display: block;
+    border-radius: 0.6rem 0 0 0.6rem;
+  }
+
+  .main-box {
+    width: 60%;
+    height: 70%;
+    margin: 0;
+  }
+  .main-box h2 {
+    font-size: 1.2rem;
+    margin: 30px 40px 10px 40px;
+  }
+
+  .main-box p {
+    margin: 0 40px;
+    line-height: 1.5;
+  }
+
+  .profile-box {
+    margin: 10px 0;
+  }
+
+  .img-profile-box {
+    margin-left: 35px;
+  }
+
+  .share-icon {
+    margin-left: 100px;
+  }
+
+  .share-box {
+    width: 250px;
+    height: 55px;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-image: none;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    right: -76px;
+    top: 45%;
+    border-radius: 0.6rem;
+  }
+
+  .share-box p,
+  ul {
+    display: inline-flex;
+  }
+  .share-box p {
+    color: hsl(212, 23%, 69%);
+    margin-left: 10px;
+  }
+
+  .share-box:after {
+    width: 0;
+    height: 0;
+    content: "";
+    position: absolute;
+    top: 100%;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid hsl(217, 19%, 35%);
+  }
+
+  .share-icon-mobile {
+    display: none;
+  }
+}
